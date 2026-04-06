@@ -23,7 +23,7 @@ public class KnockKnockClient {
     
 
     public static void joke(String who,String punchLine) throws IOException {
-        receive();
+        
         //  
         // 
         // 
