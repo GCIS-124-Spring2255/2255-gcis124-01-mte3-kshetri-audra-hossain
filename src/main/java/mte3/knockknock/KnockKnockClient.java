@@ -6,6 +6,7 @@ package mte3.knockknock;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -13,8 +14,9 @@ public class KnockKnockClient {
     public static int PORT = 54322;
     public static String SERVER = "localhost";
 
-    public static void sendAndReceive(PrintWriter writer, String message, Scanner scanner) {
+    public static void sendAndReceive(PrintWriter writer, String message, Scanner scanner) throws UnknownHostException, IOException{
         
+        Socket sock = new Socket(SERVER, PORT);
         // 
         // 
         // 
