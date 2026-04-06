@@ -13,7 +13,10 @@ import java.util.Scanner;
 public class KnockKnockServer {
     public static int PORT = 54322;
 
-    public static void receiveAndSend(Scanner scanner,String message,PrintWriter writer,boolean concat) {
+    public static void receiveAndSend(Scanner scanner,String message,PrintWriter writer,boolean concat) throws IOException{
+        ServerSocket serverSocket = new ServerSocket(PORT);
+        serverSocket.accept();
+        PrintWriter pw = new PrintWriter("Who's There?");
         // 
         // 
         // 

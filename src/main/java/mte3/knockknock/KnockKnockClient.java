@@ -15,7 +15,12 @@ public class KnockKnockClient {
     public static String SERVER = "localhost";
 
     public static void sendAndReceive(PrintWriter writer, String message, Scanner scanner) throws UnknownHostException, IOException{
-        // 
+        try{
+            Socket socket = new Socket(SERVER, PORT);
+            PrintWriter pw = new PrintWriter(socket.getOutputStream());
+            pw.println("Knock, knock");
+        }
+        catch(IOException ioe){}
         // 
         // 
 
@@ -23,7 +28,7 @@ public class KnockKnockClient {
     
 
     public static void joke(String who,String punchLine) throws IOException {
-        
+
         //  
         // 
         // 
