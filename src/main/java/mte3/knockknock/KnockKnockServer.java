@@ -14,7 +14,6 @@ public class KnockKnockServer {
     public static int PORT = 54322;
 
     public static void receiveAndSend(Scanner scanner,String message,PrintWriter writer,boolean concat) {
-        
         // 
         // 
         // 
@@ -22,7 +21,6 @@ public class KnockKnockServer {
     } // receiveAndSend() method closed
     
     public static void main(String args[]) throws IOException {
-        
         // 
         // 
         // 

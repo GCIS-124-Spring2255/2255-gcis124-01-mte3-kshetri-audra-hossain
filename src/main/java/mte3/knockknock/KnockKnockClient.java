@@ -15,8 +15,6 @@ public class KnockKnockClient {
     public static String SERVER = "localhost";
 
     public static void sendAndReceive(PrintWriter writer, String message, Scanner scanner) throws UnknownHostException, IOException{
-        
-        Socket sock = new Socket(SERVER, PORT);
         // 
         // 
         // 
@@ -25,7 +23,7 @@ public class KnockKnockClient {
     
 
     public static void joke(String who,String punchLine) throws IOException {
-        
+        receive();
         //  
         // 
         // 
